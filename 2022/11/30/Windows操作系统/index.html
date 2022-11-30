@@ -6,7 +6,7 @@
 <meta property="og:description" content="Windows操作系统Win32 API函数 Windows操作系统运转核心是动态链接库 Windows早期的三个主要子系统 Kernal（KERNAL32.DLL） 系统核心服务 进程线程管理调配 内存管理 文件访问     User（USER32.DLL） 用户接口 键鼠输入 窗口菜单管理     GDI（GDI32.DLL） 图形设备接口 图像文字输出       NT系统开始使用Unico">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-30T12:39:26.000Z">
-<meta property="article:modified_time" content="2022-11-30T12:40:36.270Z">
+<meta property="article:modified_time" content="2022-11-30T14:47:56.968Z">
 <meta property="article:author" content="yooKee-Opal">
 <meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yookee-opal.github.io/2022/11/30/Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
@@ -50,7 +50,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-11-30 20:40:36'
+  postUpdate: '2022-11-30 22:47:56'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -139,7 +139,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">yooKee-Opal's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Windows操作系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-11-30T12:39:26.000Z" title="Created 2022-11-30 20:39:26">2022-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-11-30T12:40:36.270Z" title="Updated 2022-11-30 20:40:36">2022-11-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Windows操作系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Windows操作系统"><a href="#Windows操作系统" class="headerlink" title="Windows操作系统"></a>Windows操作系统</h1><h2 id="Win32-API函数"><a href="#Win32-API函数" class="headerlink" title="Win32 API函数"></a>Win32 API函数</h2><ol>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">yooKee-Opal's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Windows操作系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-11-30T12:39:26.000Z" title="Created 2022-11-30 20:39:26">2022-11-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-11-30T14:47:56.968Z" title="Updated 2022-11-30 22:47:56">2022-11-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Windows操作系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Windows操作系统"><a href="#Windows操作系统" class="headerlink" title="Windows操作系统"></a>Windows操作系统</h1><h2 id="Win32-API函数"><a href="#Win32-API函数" class="headerlink" title="Win32 API函数"></a>Win32 API函数</h2><ol>
 <li>Windows操作系统运转核心是<font color=tomato>动态链接库</font></li>
 <li>Windows早期的三个主要<font color=tomato>子系统</font><ul>
 <li>Kernal（KERNAL32.DLL）<ul>
@@ -169,7 +169,7 @@
 </ul>
 </li>
 <li>NT系统开始使用<code>Unicode</code>标准字符集重新开发，系统核心完全是用<code>Unicode</code>函数工作<blockquote>
-<p>![[Pasted image 20221031121647.png|MessageBox默认使用Unicode]]</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yooKee-Opal/Blog-IMG/Pasted%20image%2020221031121647.png" alt="[Pasted image 20221031121647.png|MessageBox默认使用Unicode]"></p>
 </blockquote>
 </li>
 <li>NT架构下<code>Win32 API</code>能够接受<code>Unicode</code>和<code>ASCII</code>两种字符集，并且可以互相转换，但是<font color=tomato>内核只能使用<code>Unicode</code>字符集</font></li>
