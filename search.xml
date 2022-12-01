@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Windows操作系统</title>
+      <link href="/2022/11/30/Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <url>/2022/11/30/Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Windows操作系统"><a href="#Windows操作系统" class="headerlink" title="Windows操作系统"></a>Windows操作系统</h1><h2 id="Win32-API函数"><a href="#Win32-API函数" class="headerlink" title="Win32 API函数"></a>Win32 API函数</h2><ol><li>Windows操作系统运转核心是<font color=tomato>动态链接库</font></li><li>Windows早期的三个主要<font color=tomato>子系统</font><ul><li>Kernal（KERNAL32.DLL）<ul><li>系统核心服务<ul><li>进程线程管理调配</li><li>内存管理</li><li>文件访问</li></ul></li></ul></li><li>User（USER32.DLL）<ul><li>用户接口<ul><li>键鼠输入</li><li>窗口菜单管理</li></ul></li></ul></li><li>GDI（GDI32.DLL）<ul><li>图形设备接口<ul><li>图像文字输出</li></ul></li></ul></li></ul></li><li>NT系统开始使用<code>Unicode</code>标准字符集重新开发，系统核心完全是用<code>Unicode</code>函数工作<blockquote><p><img src="https://cdn.jsdelivr.net/gh/yooKee-Opal/Blog-IMG/Pasted%20image%2020221031121647.png" alt="[Pasted image 20221031121647.png|MessageBox默认使用Unicode]"></p></blockquote></li><li>NT架构下<code>Win32 API</code>能够接受<code>Unicode</code>和<code>ASCII</code>两种字符集，并且可以互相转换，但是<font color=tomato>内核只能使用<code>Unicode</code>字符集</font></li><li>Win32 API 函数字符集中<code>A</code>表示<code>ANSI</code>，<code>W</code>表示<code>Widechars</code>（即为<code>Unicode</code>）<ol><li>ANSI通常使用单字节<ol><li>例：<code>MessageBoxA</code></li></ol></li><li>Unicode通常使用宽字节，便于处理双字节字符<ol><li>例：<code>MessageBoxW</code></li></ol></li></ol></li><li><font color=tomato>在 NT架构下<code>ANSI</code>字符集需要转化为<code>Unicode</code>字符集</font>，<code>MessageBoxA</code>最终会将<code>ANSI</code>转换成<code>Unicode</code>字符串，系统最终调用<code>MessageBoxW</code>执行函数。当<code>MessageBoxW</code>函数返回时，便释放内存。因此<code>ANSI</code>版本的应用程序需要更多的内存空间和 CPU 资源，<code>Unicode</code>版的程序在<font color=tomato> NT架构下执行效率更高</font></li></ol><h2 id="WOW64"><a href="#WOW64" class="headerlink" title="WOW64"></a>WOW64</h2><ol><li>WOW64（Windows-on-Windows 64-bit）是 64 位 Windows 操作系统的子系统，可以使大多数 32 位应用程序在不进行修改的情况下运行在 64 位操作系统上</li><li>Windows 操作系统系统文件<ol><li>Windows 的 64 位系统文件存放在<code>System32</code>的文件夹中即：<code>C:\Windows\System32</code></li><li>Windows 的 32 位系统文件存放在<code>SysWOW64</code>的文件夹中即：<code>C:\Windows\SysWoW64</code></li></ol></li><li></li></ol><h2 id="Windows-消息机制"><a href="#Windows-消息机制" class="headerlink" title="Windows 消息机制"></a>Windows 消息机制</h2><ol><li><font color=tomato>Windows 是一个消息<code>（Message）</code>驱动式系统。</font>Windows 消息提供在<code>应用程序</code>与<code>应用程序</code>之间、<code>应用程序</code>与<code>系统</code>之间的通信手段。应用程序想要实现的功能由<font color=tomato>消息</font>触发，通过对<font color=tomato>消息</font>的响应和处理来完成</li><li></li></ol><h2 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>My First Blog</title>
+      <link href="/2022/11/30/My-First-Blog/"/>
+      <url>/2022/11/30/My-First-Blog/</url>
+      
+        <content type="html"><![CDATA[<p>It’s My First Blog :)</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
