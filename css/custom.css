@@ -1,3 +1,16 @@
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'Hack';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(../font/hack-regular.woff2);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
+}
+
 /* 夜间模式菜单栏发光字 */
 [data-theme="dark"] #nav .site-page,
 [data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {
@@ -31,4 +44,10 @@
 }
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
+}
+
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
 }
