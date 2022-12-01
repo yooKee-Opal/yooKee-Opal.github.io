@@ -51,3 +51,50 @@
   width: 100%;
   margin: auto;
 }
+
+
+/* 右侧小按钮圆角 */
+#rightside>div>button,#to_comment {
+    margin-right: 4px;
+    border-radius: 7px;
+  }
+
+/*侧边滑动颜色*/
+:root {
+    --btn-bg: #2F3437;
+}
+
+/*GitHub开源圆角*/
+#card-info-btn {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+
+
+/*版权卡片美化*/
+#post .post-copyright {
+position: relative;
+margin: 2rem 0 0.5rem;
+padding: 1.5rem 0.8rem;
+border: 8px solid #f6f6f6; /*卡片边框*/
+border-radius: 20px; /*边框圆角*/
+}
+#post .post-copyright:before {
+position: absolute;
+top: -1.9rem; /*C位置*/
+color: #49b1f540; /*C颜色*/
+font-size: 6rem; /*C大小*/
+}
+
+
+/*侧边栏标签美化*/
+#aside-content .card-tag-cloud a {
+  color: var(--heo-fontcolor) !important;
+  font-size: 0.8rem;
+  border-radius: 9px;
+  border-style: dashed;
+}
+#aside-content .item-headline {
+  font-weight: 700;
+}
